@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>COLD Basketball Club</title>
+  <link rel="icon" type="image/jpeg" href="Cold.jpeg">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #0d0d0d;
+      color: #f2f2f2;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 40px;
+      background-color: #111;
+      border-bottom: 1px solid #222;
+    }
+
+    header img {
+      height: 50px;
+    }
+
+    nav a {
+      color: #f2f2f2;
+      text-decoration: none;
+      margin-left: 30px;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #00ffff;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 100px 20px 60px;
+      background: linear-gradient(to bottom, #0d0d0d, #111);
+    }
+
+    .hero h1 {
+      font-size: 60px;
+      letter-spacing: 5px;
+      color: #00ffff;
+    }
+
+    .hero p {
+      font-size: 20px;
+      color: #aaa;
+      margin-top: 10px;
+    }
+
+    .hero button {
+      margin-top: 40px;
+      padding: 12px 30px;
+      font-size: 16px;
+      background-color: transparent;
+      border: 2px solid #00ffff;
+      color: #00ffff;
+      cursor: pointer;
+      transition: 0.3s;
+      border-radius: 5px;
+    }
+
+    .hero button:hover {
+      background-color: #00ffff;
+      color: #0d0d0d;
+    }
+
+    .section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .section img {
+      max-width: 100%;
+      border-radius: 10px;
+      margin-top: 20px;
+      box-shadow: 0 0 20px rgba(0, 255, 255, 0.1);
+    }
+
+    .footer {
+      background-color: #111;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      color: #555;
+      border-top: 1px solid #222;
+    }
+
+    .cool-button {
+      background: none;
+      color: #00ffff;
+      padding: 10px 20px;
+      border: 2px solid #00ffff;
+      border-radius: 30px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .cool-button:hover {
+      background-color: #00ffff;
+      color: #0d0d0d;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="Cold.jpeg" alt="COLD Logo">
+  <nav>
+  <a href="https://www.instagram.com/bsktbll725/" target="_blank">INSTAGRAM</a>
+</nav>
+</header>
+
+<section class="hero">
+  <h1>WE ARE COLD</h1>
+  <p>Stay Cool and COLD</p>
+  <button class="cool-button" onclick="window.location.href='http://bit.ly/41xmn5p'">JOIN CHANNEL KAMI</button>
+</section>
+
+<section class="section" id="about">
+  <h2 style="color: #00ffff; font-size: 32px;">Tentang Kami</h2>
+  <p>
+    COLD adalah tim yang menjunjung tinggi kerja sama dan disiplin.
+Kami percaya bahwa permainan terbaik lahir dari kekompakan, bukan hanya skill individu.
+Setiap pertandingan kami hadapi dengan keseriusan penuh
+  </p>
+</section>
+
+<section class="section" id="roster">
+  <h2 style="color: #00ffff; font-size: 32px;">Roster Kami</h2>
+  <p>Lineup Dari Tim Kami</p>
+  
+  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 40px; margin-top: 40px;">
+    <div style="text-align: center;">
+      <h3 style="color: #fff;">#67 Zenas</h3>
+      <p style="color: #aaa;">Point Guard</p>
+    </div>
+
+    <div style="text-align: center;">
+      <h3 style="color: #fff;">#? ?????</h3>
+      <p style="color: #aaa;">Shooting Guard</p>
+    </div>
+
+    <div style="text-align: center;">
+      <h3 style="color: #fff;">#? ?????</h3>
+      <p style="color: #aaa;">Small Forward</p>
+    </div>
+
+    <div style="text-align: center;">
+      <h3 style="color: #fff;">#? ?????</h3>
+      <p style="color: #aaa;">Power Forward</p>
+    </div>
+
+    <div style="text-align: center;">
+      <h3 style="color: #fff;">#? ?????</h3>
+      <p style="color: #aaa;">Center</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="contact">
+  <h2 style="color: #00ffff; font-size: 32px;">Daftar</h2>
+  <p>Tertarik untuk bergabung atau bekerja sama dengan COLD? Daftar Dibawah!.<br><br></p>
+  <button class="cool-button" onclick="window.location.href='https://forms.gle/WCpCLZ6mHedc2UAy6'">DAFTAR</button>
+</section>
+
+<footer class="footer">
+  &copy; 2025 COLD Basketball Club. All rights reserved.
+</footer>
+
+<script>
+  function scrollToSection(id) {
+    document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+  }
+</script>
+
+</body>
+</html>
