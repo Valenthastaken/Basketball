@@ -6,167 +6,190 @@
   <link rel="icon" type="image/jpeg" href="Cold.jpeg">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    @media screen and (max-width: 768px) {
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: #0d0d0d;
+    color: #f2f2f2;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+  }
+
+ 
   header {
-    flex-direction: column;
+    display: flex;
     align-items: center;
-    padding: 20px;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background-color: #111;
+    border-bottom: 1px solid #222;
+    flex-wrap: wrap;
+  }
+
+  header img {
+    height: 50px;
   }
 
   nav {
-    margin-top: 10px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
   }
 
   nav a {
-    display: inline-block;
-    margin: 10px;
+    color: #f2f2f2;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+
+  nav a:hover {
+    color: #00ffff;
+  }
+
+
+  .hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(to bottom, #0d0d0d, #111);
   }
 
   .hero h1 {
-    font-size: 36px;
+    font-size: 48px;
+    letter-spacing: 3px;
+    color: #00ffff;
   }
 
   .hero p {
-    font-size: 16px;
+    font-size: 18px;
+    color: #aaa;
+    margin-top: 10px;
+    padding: 0 10px;
   }
 
+  .hero .hero-btn {
+    margin-top: 30px;
+    padding: 14px 28px;
+    font-size: 16px;
+    border: 2px solid #00ffff;
+    background-color: transparent;
+    color: #00ffff;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .hero .hero-btn:hover {
+    background-color: #00ffff;
+    color: #0d0d0d;
+  }
+
+ 
   .section {
-    padding: 40px 15px;
+    padding: 60px 20px;
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
   }
 
   .section h2 {
-    font-size: 28px;
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #00ffff;
+  }
+
+  .section p {
+    font-size: 16px;
+    color: #ccc;
   }
 
   .section img {
     width: 100%;
     height: auto;
+    border-radius: 10px;
+    margin-top: 25px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.1);
   }
 
-  .cool-button, .hero button {
+  .cool-button {
+    margin-top: 25px;
+    background: none;
+    color: #00ffff;
+    padding: 12px 24px;
+    border: 2px solid #00ffff;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
     width: 100%;
-    max-width: 300px;
-    margin: 10px auto;
+    max-width: 280px;
+    transition: 0.3s;
   }
 
+  .cool-button:hover {
+    background-color: #00ffff;
+    color: #0d0d0d;
+  }
+
+ 
   .footer {
-    font-size: 12px;
-    padding: 15px;
+    background-color: #111;
+    text-align: center;
+    padding: 20px;
+    font-size: 13px;
+    color: #777;
+    border-top: 1px solid #222;
   }
-}
 
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      background-color: #0d0d0d;
-      color: #f2f2f2;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      line-height: 1.6;
-    }
-
+ 
+  @media screen and (max-width: 768px) {
     header {
-      display: flex;
+      flex-direction: column;
       align-items: center;
-      justify-content: space-between;
-      padding: 20px 40px;
-      background-color: #111;
-      border-bottom: 1px solid #222;
+      text-align: center;
+      padding: 20px;
     }
 
-    header img {
-      height: 50px;
+    nav {
+      margin-top: 10px;
+      flex-direction: column;
+      align-items: center;
     }
 
     nav a {
-      color: #f2f2f2;
-      text-decoration: none;
-      margin-left: 30px;
-      font-weight: 500;
-      transition: color 0.3s;
-    }
-
-    nav a:hover {
-      color: #00ffff;
-    }
-
-    .hero {
-      text-align: center;
-      padding: 100px 20px 60px;
-      background: linear-gradient(to bottom, #0d0d0d, #111);
+      margin: 10px 0;
     }
 
     .hero h1 {
-      font-size: 60px;
-      letter-spacing: 5px;
-      color: #00ffff;
+      font-size: 34px;
     }
 
     .hero p {
-      font-size: 20px;
-      color: #aaa;
-      margin-top: 10px;
-    }
-
-    .hero button {
-      margin-top: 40px;
-      padding: 12px 30px;
       font-size: 16px;
-      background-color: transparent;
-      border: 2px solid #00ffff;
-      color: #00ffff;
-      cursor: pointer;
-      transition: 0.3s;
-      border-radius: 5px;
     }
 
-    .hero button:hover {
-      background-color: #00ffff;
-      color: #0d0d0d;
+    .section h2 {
+      font-size: 26px;
     }
 
-    .section {
-      padding: 60px 20px;
-      max-width: 1000px;
-      margin: auto;
-      text-align: center;
+    .section p {
+      font-size: 15px;
     }
 
-    .section img {
-      max-width: 100%;
-      border-radius: 10px;
-      margin-top: 20px;
-      box-shadow: 0 0 20px rgba(0, 255, 255, 0.1);
-    }
-
-    .footer {
-      background-color: #111;
-      text-align: center;
-      padding: 20px;
-      font-size: 14px;
-      color: #555;
-      border-top: 1px solid #222;
-    }
-
+    .hero .hero-btn,
     .cool-button {
-      background: none;
-      color: #00ffff;
-      padding: 10px 20px;
-      border: 2px solid #00ffff;
-      border-radius: 30px;
-      font-size: 16px;
-      cursor: pointer;
-      transition: all 0.3s ease-in-out;
+      font-size: 15px;
+      padding: 12px 20px;
     }
+  }
+</style>
 
-    .cool-button:hover {
-      background-color: #00ffff;
-      color: #0d0d0d;
-    }
-  </style>
 </head>
 <body>
 
@@ -242,5 +265,6 @@ Setiap pertandingan kami hadapi dengan keseriusan penuh
 
 </body>
 </html>
+
 
 
